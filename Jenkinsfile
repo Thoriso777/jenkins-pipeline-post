@@ -44,5 +44,15 @@ pipeline {
         // One or more steps need to be included within each condition's block.
         echo 'An error has ocurred'
       }
+        post {
+  success {
+    // One or more steps need to be included within each condition's block.
+      echo 'deployment success'
+      }
+  failure {
+    // One or more steps need to be included within each condition's block.
+      echo 'Error'
+         }
+}
  }
 }
